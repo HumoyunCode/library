@@ -18,12 +18,9 @@
             <!-- Content For Sidebar -->
             <div class="h-100">
                 <div class="sidebar-logo">
-                    <a href="#">CodzSword</a>
+                    <a href="#">Kutubxona boshqarish tizimi</a>
                 </div>
                 <ul class="sidebar-nav">
-                    <li class="sidebar-header">
-                        Admin Elements
-                    </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">
                             <i class="fa-solid fa-list pe-2"></i>
@@ -33,38 +30,21 @@
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link collapsed" data-bs-target="#pages" data-bs-toggle="collapse"
                             aria-expanded="false"><i class="fa-solid fa-file-lines pe-2"></i>
-                            Pages
+                            Hisoblar
                         </a>
                         <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                             <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Page 1</a>
+                                <a href="#" class="sidebar-link">Admin</a>
                             </li>
                             <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Page 2</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-target="#posts" data-bs-toggle="collapse"
-                            aria-expanded="false"><i class="fa-solid fa-sliders pe-2"></i>
-                            Posts
-                        </a>
-                        <ul id="posts" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Post 1</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Post 2</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Post 3</a>
+                                <a href="#" class="sidebar-link">User</a>
                             </li>
                         </ul>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link collapsed" data-bs-target="#auth" data-bs-toggle="collapse"
                             aria-expanded="false"><i class="fa-regular fa-user pe-2"></i>
-                            Auth
+                            Avtarizatsiya
                         </a>
                         <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                             <li class="sidebar-item">
@@ -75,29 +55,6 @@
                             </li>
                             <li class="sidebar-item">
                                 <a href="#" class="sidebar-link">Forgot Password</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="sidebar-header">
-                        Multi Level Menu
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-target="#multi" data-bs-toggle="collapse"
-                            aria-expanded="false"><i class="fa-solid fa-share-nodes pe-2"></i>
-                            Multi Dropdown
-                        </a>
-                        <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link collapsed" data-bs-target="#level-1"
-                                    data-bs-toggle="collapse" aria-expanded="false">Level 1</a>
-                                <ul id="level-1" class="sidebar-dropdown list-unstyled collapse">
-                                    <li class="sidebar-item">
-                                        <a href="#" class="sidebar-link">Level 1.1</a>
-                                    </li>
-                                    <li class="sidebar-item">
-                                        <a href="#" class="sidebar-link">Level 1.2</a>
-                                    </li>
-                                </ul>
                             </li>
                         </ul>
                     </li>
@@ -136,8 +93,8 @@
                                     <div class="row g-0 w-100">
                                         <div class="col-6">
                                             <div class="p-3 m-1">
-                                                <h4>Welcome Back, Admin</h4>
-                                                <p class="mb-0">Admin Dashboard, CodzSword</p>
+                                                <h4>Hisobga kirdingiz, Admin</h4>
+                                                <p class="mb-0">NamMQI kutubxona boshqarish tizimi</p>
                                             </div>
                                         </div>
                                         <div class="col-6 align-self-end text-end">
@@ -261,6 +218,7 @@
                                         <th scope="col">Familiyasi</th>
                                         <th scope="col">email</th>
                                         <th>Ijaraga olgan kitobi</th>
+                                        <th>Kitob turi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -270,14 +228,19 @@
                                         <td>Toshmat</td>
                                         <td>@toshmat</td>
                                         <td>Python dasturlash tili</td>
+                                        <td>Darslik</td>
                                     </tr>
+                                </tbody>
+
+                                <tbody>
                                     <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
+                                        <th scope="row">1</th>
+                                        <td>Olimov</td>
+                                        <td>Eshmat</td>
+                                        <td>@eshmat</td>
+                                        <td>Hisoblash usullari</td>
+                                        <td>Darslik</td>
                                     </tr>
-                                    
                                 </tbody>
                             </table>
                         </div>
@@ -301,16 +264,14 @@
                         <div class="col-6 text-end">
                             <ul class="list-inline">
                                 <li class="list-inline-item">
-                                    <a href="#" class="text-muted">Contact</a>
+                                    <a href="#" class="text-muted">Bog'lanish</a>
+                                </li>
+                                
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-muted">Kirish</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#" class="text-muted">About Us</a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" class="text-muted">Terms</a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" class="text-muted">Booking</a>
+                                    <a href="#" class="text-muted">Kitob buyurtma qilish</a>
                                 </li>
                             </ul>
                         </div>
