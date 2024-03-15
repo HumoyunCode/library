@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 </head>
 
 <body>
@@ -148,6 +149,72 @@
                             </div>
                         </div>
 
+                        <div class="mb-3 container">
+                            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+
+                            <div class="container my-5">
+                                <h1 class="text-center mb-4">Bootstrap 5 Diagrams and Pie Charts</h1>
+                                <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                    <div class="card-header">
+                                        Pie Chart
+                                    </div>
+                                    <div class="card-body">
+                                        <canvas id="pieChart"></canvas>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                    <div class="card-header">
+                                        Bar Chart
+                                    </div>
+                                    <div class="card-body">
+                                        <canvas id="barChart"></canvas>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    
+                        <div class="mb-3 container">
+ 
+                            <form class="row g-3">
+                                <div class="col-md-4">
+                                    <label for="inputEmail4" class="form-label">Kitob Nomi</label>
+                                    <input type="text" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputPassword4" class="form-label">Muallif</label>
+                                    <input type="text" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-6">
+                                    <label for="inputAddress" class="form-label">kitob raqami</label>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="12345678">
+                                </div>
+                               
+                                <div class="col-md-6">
+                                    <label for="inputCity" class="form-label">Fan nomi</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputState" class="form-label">Kitob turlari</label>
+                                    <select id="inputState" class="form-select">
+                                    <option selected>kitob turini tanlash</option>
+                                    <option>Adabiyot</option>
+                                    <option>Qo'lanma</option>
+                                    <option>Darslik</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Kitob qo'shish</button>
+                                </div>
+                            </form>
+                        </div>
                         
 
                         <div class="col-12 col-md-6 d-flex">
@@ -156,17 +223,17 @@
                                     <div class="d-flex align-items-start">
                                         <div class="flex-grow-1">
                                             <h4 class="mb-2">
-                                                $ 78.00
+                                                155
                                             </h4>
                                             <p class="mb-2">
-                                                Total Earnings
+                                                Umumiy foydalanuvchilar
                                             </p>
                                             <div class="mb-0">
                                                 <span class="badge text-success me-2">
                                                     +9.0%
                                                 </span>
                                                 <span class="text-muted">
-                                                    Since Last Month
+                                                    Ohirgi oydagi O'sish
                                                 </span>
                                             </div>
                                         </div>
@@ -179,29 +246,30 @@
                     <div class="card border-0">
                         <div class="card-header">
                             <h5 class="card-title">
-                                Basic Table
+                                Foydalanuvchilar jadvali
                             </h5>
                             <h6 class="card-subtitle text-muted">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus,
-                                necessitatibus reprehenderit itaque!
+                                Hamma foydalanuvchi o'quvchilar va ustozlarni ko'rish
                             </h6>
                         </div>
                         <div class="card-body">
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
+                                        <th scope="col">Id</th>
+                                        <th scope="col">Ismi</th>
+                                        <th scope="col">Familiyasi</th>
+                                        <th scope="col">email</th>
+                                        <th>Ijaraga olgan kitobi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
+                                        <td>G'ishmatov</td>
+                                        <td>Toshmat</td>
+                                        <td>@toshmat</td>
+                                        <td>Python dasturlash tili</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">2</th>
@@ -209,11 +277,7 @@
                                         <td>Thornton</td>
                                         <td>@fat</td>
                                     </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
+                                    
                                 </tbody>
                             </table>
                         </div>
@@ -257,6 +321,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <html>
 </body>
 
 </html>
